@@ -18,7 +18,7 @@ class MessageUseCaseTest {
     @Before
     fun setUp() {
         messageUseCase = MessageInteractor(messageRepository)
-        val dummyMessage = MessageEntity("Hello $NAME Welcome to Clean Architecture")
+        val dummyMessage = MessageEntity("Hello $NAME Welcome to Clean Architecture 2")
         `when`(messageRepository.getWelcomeMessage(NAME)).thenReturn(dummyMessage)
     }
 
